@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  background-color: #333;
+  color: whitesmoke;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background-color: #B80355;
+}
+
+.logo{
+  height: 50%;
+  color: #333;
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  gap: 1.5rem;
+}
+
+h1{
+  color:#B80355;
+  font-size: 30px;
+}
+
+h2{
+  color: whitesmoke;
+}
+
+/* rule akan diterapkan pada sebuah tautan ketika diarahkan dengan kursor */
+a:hover {
+  color: pink;
+}
+
+a{
+  text-decoration: none;
+  background-color: transparent;
+}
+
+blockquote::before,
+blockquote::after {
+content: '"';
+font-size: 24px;
+font-style: italic;
+font-weight: bold;
+}
+
+nav a {
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+  border-radius: 999px;
+  padding: 0.5rem;
+  background: white;
+  transition: all .2s ease-in-out;
+}
+
+nav a:hover {
+  color: pink;
+  background-color: #333;
+}
+
+#profile{
+  justify-content: center;
+  align-items: center;
+}
+
+#profile header {
+      text-align: center;
+}
+
+.featured-image {
+      max-height: 500px;
+      object-fit: cover;
+      object-position: center;
+      align-items: center;
+      width: 100px;
+  }
+.profile img {
+      width: 200px;
+}
+    
+.card {
+  box-shadow: 0 4px 8px 0 gray;
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+nav li {
+list-style-type: none;
+}
+nav {
+  background-color: transparent;
+  position: sticky;
+  top: 0;
+}
+
+nav ul {
+padding-inline: 4rem;
+display: flex;
+gap: 2rem;
+}
+#content {
+  width: 60%;
+  flex: 5;
+}
+aside.card {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  max-height: 500px;
+}
+
+#education.card {
+display: grid; 
+align-items: center; 
+}
+
+#education h1 {
+margin-top: 0; 
+}
+
+#education table {
+margin-top: 10px; 
+}
+
+@media screen and (max-width: 1000px) {
+  main{
+    display: flex;
+    flex-direction: column;
+  }
+  #content {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 auto;
+    font-size: 15px;
+  }
+  aside.card{
+    width: 50%;
+    margin: 0 auto;
+    padding: 0 auto;
+    font-size: 15px;
+  }
+}
+
+footer{
+  width: 100%;
+  padding: 20px;
+  color: white;
+  background-color: #B80355;
+  text-align: center;
+  justify-content: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: #333;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer div {
+  background-color: transparent;
+}
